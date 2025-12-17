@@ -13,24 +13,19 @@ import com.example.demo.repository.StudentRepository;
 
 // import com.example.demo.entity.Student;
 
-
 @Service
-public class StudentServiceImpl implements  {
+public class StudentServiceImpl implements StudentService {
 
-    // Map<Integer,Student>data=new HashMap<>();
-
-    // public Student createData(Student stu) {
-    //     data.put(stu.getId(),stu);
-    //     return stu;
-    // }
     @Autowired
     StudentRepository repo;
 
+    @Override
     //create (or) Insert data
     public Student createData(Student stu){
         return repo.save(stu);
     }
-
+    
+    @Override
     //Fetch all records
     public List<Student>fetchRecord(){
         return repo.findAll();
