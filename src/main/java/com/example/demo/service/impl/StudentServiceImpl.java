@@ -12,7 +12,7 @@ import com.example.demo.repository.StudentRepository;
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
-    private StudentRepository repo;
+    StudentRepository repo;
 
     @Override
     public Student createData(Student stu) {
