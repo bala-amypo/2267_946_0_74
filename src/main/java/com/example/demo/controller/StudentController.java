@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import java.util.List;
 import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,7 @@ import com.example.demo.service.StudentService;
 public class StudentController {
 
     @Autowired
-    private StudentService ssr;
+    StudentService ssr;
 
     @PostMapping("/adddata")
     public Student createData(@RequestBody Student stu) {
@@ -30,6 +29,6 @@ public class StudentController {
     }
     @GetMapping("/fetchdataById/{id}")
     public Optional<Student> fetchdataById(@PathVariable int id){
-        return ser.fetchDataById(id);
+        return ssr.fetchDataById(id);
     }
 }
