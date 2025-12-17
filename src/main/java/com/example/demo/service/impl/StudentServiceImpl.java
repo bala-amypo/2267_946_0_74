@@ -15,7 +15,7 @@ import com.example.demo.repository.StudentRepository;
 
 
 @Service
-public class StudentService {
+public class StudentServiceImpl implements  {
 
     // Map<Integer,Student>data=new HashMap<>();
 
