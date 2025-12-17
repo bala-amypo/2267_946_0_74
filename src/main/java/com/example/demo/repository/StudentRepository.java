@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.Student;
 
 @Repository
-public interface Sturepository extends JpaRepository<Integer,Student> {
+public interface StudentRepository extends JpaRepository<Integer,Student> {
 
     Student save(Student stu);
 
