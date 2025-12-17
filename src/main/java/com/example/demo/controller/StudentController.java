@@ -23,5 +23,5 @@ public class StudentController {
     @GetMapping
     public Student fetchRecord(){
         return ssr.fetchRecord();
-    }
+        }
 }
